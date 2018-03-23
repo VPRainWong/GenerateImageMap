@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.imagemap"
+		name="Gen Image Map"
+		description="Generate Image Map"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.imagemap.ImageMapPlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.imagemap.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.imagemap.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.imagemap.actionset1.ImageMapAction"
+					actionType="generalAction"
+      		name="gen image map"
+		      description="Generate Image Map"
+					style="normal"
+          tooltip="Geerate Image Map"
+          icon="icon/map.png"
+					toolbarPath="com.vp.plugin.sample.imagemap.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.imagemap.actions.ImageMapActionControl"/>
+			</action>
+			
+		</actionSet>
+	</actionSets>	
+</plugin>
